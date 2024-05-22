@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: yekanBakh-Regular;
+
+  src: url('../src/fonts/woff/YekanBakhFaNum-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: yekanBakh-Bold;
+
+  src: url('../src/fonts/woff/YekanBakhFaNum-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-family: rokh;
+
+  src: url('../src/fonts/woff/Rokh-Black.ttf') format("truetype");
+}
+@font-face {
+  font-family: Astonia;
+
+  src: url('../src/fonts/Astonia.ttf') format("truetype");
+}
+@font-face {
+  font-family: stretch;
+
+  src: url('../fonts/StretchPro.otf') format("opentype");
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: yekanBakh-Bold;
+  user-select: none;
+  overflow-x:hidden;
+}
+a {
+  cursor: pointer;
+}
+.shadow-1{
+  box-shadow: -11.2px 8.8px 64px 0px #D1AF89B2;
+}
+.shadow-2{
+  box-shadow: 0px 0px 200px 0px #00000021;
+}
+.shadow-3{
+  box-shadow: -10px -10px 20px 0px #1E2D4833;
+}
+.shadow-4{
+  box-shadow: 0px 0px 62.4px 0px #0000001C;
+}
+.shadow-5{
+  box-shadow: 5px 8.03px 47.6px 0px #16192E1A;
+}
+.shadow-6{
+  box-shadow: 0px 0px 62.4px 0px #00000026;
+}
+.scale-custom{
+  transform: scale(80%,48%) rotate(45deg);
+}
+.blur-9{
+  backdrop-filter: blur(9px);
+}
+#testimonials{
+  padding-right: calc((100% - 1200px) / 2);
+}
+#wallets::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 367px;
+  background: linear-gradient(180deg, rgba(31, 46, 73, 0) 0%, #1E2D47 100%);
+  z-index: 0;
+}
+.accordionContent {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+.accordionContent.active {
+  max-height: 2000px;
+}
