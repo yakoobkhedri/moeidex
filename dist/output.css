@@ -784,9 +784,19 @@ video {
   margin-right: auto;
 }
 
+.my-36 {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
 .my-40 {
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-auto {
@@ -860,10 +870,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-36 {
-  margin-top: 9rem;
 }
 
 .mt-4 {
@@ -1077,6 +1083,10 @@ video {
   width: 303px;
 }
 
+.w-\[397px\] {
+  width: 397px;
+}
+
 .w-\[45px\] {
   width: 45px;
 }
@@ -1279,14 +1289,6 @@ video {
   border-radius: 1.5rem;
 }
 
-.rounded-\[12px\] {
-  border-radius: 12px;
-}
-
-.rounded-\[18px\] {
-  border-radius: 18px;
-}
-
 .rounded-\[19px\] {
   border-radius: 19px;
 }
@@ -1337,8 +1339,16 @@ video {
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-t {
@@ -1443,6 +1453,10 @@ video {
   padding: 1.75rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-\[14px\] {
   padding: 14px;
 }
@@ -1484,11 +1498,6 @@ video {
   padding-right: 1.75rem;
 }
 
-.px-\[14px\] {
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
 .px-\[15px\] {
   padding-left: 15px;
   padding-right: 15px;
@@ -1512,6 +1521,11 @@ video {
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-4 {
@@ -1549,6 +1563,10 @@ video {
 
 .pb-52 {
   padding-bottom: 13rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pb-60 {
@@ -1925,6 +1943,18 @@ a {
   box-shadow: 0px 0px 62.4px 0px #00000026;
 }
 
+.shadow-7{
+  box-shadow: 0px 0px 200px 0px #0000001A;
+}
+
+.shadow-8{
+  box-shadow: 0px 0px 43.02px 0px #0000001A;
+}
+
+.shadow-next {
+  box-shadow: -2px 0px 24px 0px #0000001A;
+}
+
 .scale-custom{
   transform: scale(80%,48%) rotate(45deg);
 }
@@ -1958,6 +1988,26 @@ a {
 
 .accordionContent.active {
   max-height: 2000px;
+}
+
+/* wave */
+
+.website-divider-container-381466 {
+  overflow:hidden;
+  position: relative;
+  height: 60px;
+  top: -2px;
+}
+
+.divider-img-381466
+{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  transform: scale(1);
+  bottom:0px;
+  left: 0px;
+  fill: rgb(30, 45, 72)
 }
 
 .group:hover .group-hover\:opacity-100 {
@@ -2189,10 +2239,6 @@ a {
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
-  }
-
-  .sm\:w-\[209px\] {
-    width: 209px;
   }
 
   .sm\:grid-cols-2 {
