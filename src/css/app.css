@@ -63,6 +63,9 @@ a {
 .shadow-8{
   box-shadow: 0px 0px 43.02px 0px #0000001A;
 }
+.shadow-9{
+  box-shadow: 0px 0px 37.23px 0px #00000033;
+}
 .shadow-next {
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
@@ -83,6 +86,16 @@ a {
   bottom: 0;
   height: 367px;
   background: linear-gradient(180deg, rgba(31, 46, 73, 0) 0%, #1E2D47 100%);
+  z-index: 0;
+}
+#buyCurrency::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 222px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.61) 0%, rgba(0, 0, 0, 0.57) 100%);
   z-index: 0;
 }
 .accordionContent {
