@@ -107,6 +107,16 @@ a {
 .accordionContent.active {
   max-height: 2000px;
 }
+.border-white-1{
+border-width: 0px, 0px, 2.38px, 2.38px;
+border-style: solid;
+border-color: #FFFFFF80;
+}
+.border-white-2{
+border-width: 0px, 0px, 0.98px, 0.98px;
+border-style: solid;
+border-color: #FFFFFF29;
+}
 /* wave */
 .website-divider-container-381466 {
   overflow:hidden;
@@ -125,3 +135,4 @@ a {
 	left: 0px;
 	fill: rgb(30, 45, 72)
 }
+/*  */
