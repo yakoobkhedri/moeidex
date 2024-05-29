@@ -165,10 +165,12 @@
             <div>
                 <div class="max-w-content mx-auto px-4 relative">
                     <!-- svg -->
-                    <img alt="img" src="../img/Frame 2.png" class="absolute -top-40 rtl:-left-9 ltr:-right-9 z-1">
+                    <img alt="img" src="../img/Frame 2.png" class="absolute -top-24 sm:-top-40 rtl:left-0 rtl:sm:-left-9 ltr:right-0 ltr:sm:-right-9 z-1 w-56 sm:w-auto">
                     <!--  -->
-                    <h5 class="text-4xl font-black text-white rtl:font-rokh">سوالات متداول</h5>
-                    <p class="text-lg text-white opacity-50 mt-1">پاسخ سوالات خود را پیدا کنید</p>
+                    <div class="relative top-9 sm:top-auto">
+                        <h5 class="sm:text-4xl text-3xl font-black text-white rtl:font-rokh">سوالات متداول</h5>
+                        <p class="text-lg text-white opacity-50 mt-1 rtl:pl-24 rtl:sm:pl-0 ltr:pr-24 ltr:sm:pr-0">پاسخ سوالات خود را پیدا کنید</p>
+                    </div>
                 </div>
                 <div class="relative">
                     <!-- bg -->
@@ -176,8 +178,8 @@
                     <!--  -->
                     <div class="max-w-content mx-auto px-4 mt-12">
                         <div class="bg-white rounded-2xl shadow-4 p-8">
-                            <div class="flex flex-col sm:flex-row gap-4 items-center justify-between rounded-2xl p-4 shadow-8">
-                                <div class="w-[397px] rounded-2xl bg-[#F0F2F5] h-12 flex items-center gap-2 px-4">
+                            <div class="flex flex-col lg:flex-row gap-4 items-center justify-between rounded-2xl p-4 shadow-8">
+                                <div class="max-w-[397px] w-full rounded-2xl bg-[#F0F2F5] h-12 flex items-center gap-2 px-4">
                                  <input class="text-primary bg-transparent text-sm h-full w-full outline-none border-0" placeholder="جستجو در بین سوالات...">
                                  <button class="w-8 h-8 bg-white flex items-center justify-center rounded-lg">
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -185,17 +187,17 @@
                                     </svg>
                                  </button>
                                 </div>
-                                <div class="flex items-center gap-3">
-                                  <div class="rounded-2xl h-12 text-sm text-primary opacity-50 px-4 transition-all hover:bg-[#E3E8F2] hover:opacity-100 flex items-center justify-center cursor-pointer border border-[#0000001A]">
+                                <div class="flex flex-wrap items-center gap-3">
+                                  <div class="rounded-2xl flex-grow h-12 text-sm text-primary opacity-50 px-4 transition-all hover:bg-[#E3E8F2] hover:opacity-100 flex items-center justify-center cursor-pointer border border-[#0000001A]">
                                     همه سوالات
                                   </div>
-                                  <div class="rounded-2xl h-12 text-sm text-primary opacity-50 px-4 transition-all hover:bg-[#E3E8F2] hover:opacity-100 flex items-center justify-center cursor-pointer border border-[#0000001A]">
+                                  <div class="rounded-2xl flex-grow h-12 text-sm text-primary opacity-50 px-4 transition-all hover:bg-[#E3E8F2] hover:opacity-100 flex items-center justify-center cursor-pointer border border-[#0000001A]">
                                     واریز و برداشت ارز
                                   </div>
-                                  <div class="rounded-2xl h-12 text-sm text-primary opacity-50 px-4 transition-all hover:bg-[#E3E8F2] hover:opacity-100 flex items-center justify-center cursor-pointer border border-[#0000001A]">
+                                  <div class="rounded-2xl flex-grow h-12 text-sm text-primary opacity-50 px-4 transition-all hover:bg-[#E3E8F2] hover:opacity-100 flex items-center justify-center cursor-pointer border border-[#0000001A]">
                                     خرید و فروش ارز
                                   </div>
-                                  <div class="rounded-2xl h-12 text-sm text-primary opacity-50 px-4 transition-all hover:bg-[#E3E8F2] hover:opacity-100 flex items-center justify-center cursor-pointer border border-[#0000001A]">
+                                  <div class="rounded-2xl flex-grow h-12 text-sm text-primary opacity-50 px-4 transition-all hover:bg-[#E3E8F2] hover:opacity-100 flex items-center justify-center cursor-pointer border border-[#0000001A]">
                                     واریز و برداشت ریالی
                                   </div>
                                 </div>

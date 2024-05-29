@@ -156,6 +156,20 @@ var blogSwiper= new Swiper(".blogSwiper", {
     clickable: true,
   }
 });
+var swiperComment = new Swiper(".swiperComment", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop:true,
+  autoplay: true,
+  breakpoints: {
+    768: {
+    },
+    992: {
+      slidesPerView: 2,
+      direction: "vertical",
+    }
+  },
+});
 // radio input
 
 let addressItem=Array.from(document.getElementsByClassName('addressItem'));
