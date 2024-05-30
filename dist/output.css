@@ -3047,12 +3047,29 @@ a {
     grid-column: span 7 / span 7;
   }
 
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lg\:mr-\[110px\] {
     margin-right: 110px;
   }
 
   .lg\:mt-9 {
     margin-top: 2.25rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
@@ -3087,12 +3104,20 @@ a {
     justify-content: flex-end;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:gap-7 {
     gap: 1.75rem;
   }
 
   .lg\:gap-\[18px\] {
     gap: 18px;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:rounded-\[40px\] {
