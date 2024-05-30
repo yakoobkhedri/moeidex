@@ -1327,6 +1327,10 @@ video {
   max-width: 100%;
 }
 
+.max-w-\[303px\] {
+  max-width: 303px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -1491,6 +1495,10 @@ video {
 
 .overflow-visible {
   overflow: visible;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .rounded {
@@ -2804,6 +2812,10 @@ a {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:max-w-\[303px\] {
+    max-width: 303px;
   }
 
   .sm\:grid-cols-2 {
