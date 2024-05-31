@@ -2070,6 +2070,14 @@ video {
   line-height: 77px;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.leading-\[55px\] {
+  line-height: 55px;
+}
+
 .text-\[\#1E2D48\] {
   --tw-text-opacity: 1;
   color: rgb(30 45 72 / var(--tw-text-opacity));
@@ -2774,6 +2782,11 @@ a {
     padding-right: 2rem;
   }
 
+  .sm\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .sm\:text-right {
     text-align: right;
   }
@@ -2806,8 +2819,20 @@ a {
     line-height: 1.75rem;
   }
 
+  .sm\:text-\[50px\] {
+    font-size: 50px;
+  }
+
   .sm\:leading-9 {
     line-height: 2.25rem;
+  }
+
+  .sm\:leading-\[77px\] {
+    line-height: 77px;
+  }
+
+  .sm\:leading-8 {
+    line-height: 2rem;
   }
 
   :is([dir="ltr"] .ltr\:sm\:-right-9) {
@@ -3040,6 +3065,10 @@ a {
 
   .lg\:w-40 {
     width: 10rem;
+  }
+
+  .lg\:max-w-\[647px\] {
+    max-width: 647px;
   }
 
   .lg\:grid-cols-12 {
