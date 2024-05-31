@@ -18,6 +18,9 @@ module.exports = {
       lineHeight:{
        
       },
+      padding:{
+       'custom':'calc((100% - 1256px) / 2)'
+      },
       fontFamily: {
         rokh: "rokh",
         stretch: "stretch",

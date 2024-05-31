@@ -80,7 +80,12 @@ var services= new Swiper(".services", {
 var currencies= new Swiper(".currencies", {
   loop: true,
   spaceBetween: 35,
-  slidesPerView: .8,
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: .8,
+    },
+  },
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
