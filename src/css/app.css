@@ -81,9 +81,6 @@ a {
 .blur-9{
   backdrop-filter: blur(9px);
 }
-#testimonials{
-  padding-right: calc((100% - 1200px) / 2);
-}
 #wallets::after{
   content: '';
   position: absolute;

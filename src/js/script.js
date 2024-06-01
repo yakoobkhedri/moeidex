@@ -122,7 +122,7 @@ var walletServices= new Swiper(".walletServices", {
 var testimonials= new Swiper(".testimonials", {
   loop: true,
   spaceBetween: 22,
-  slidesPerView: 1.1,
+  slidesPerView: 1,
   breakpoints: {
     576: {
       slidesPerView: 2,
