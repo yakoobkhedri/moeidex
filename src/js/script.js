@@ -7,46 +7,15 @@ accordionBtn.forEach((item)=>{
     item.nextElementSibling.classList.toggle('active');
   })
 })
+
 // menu
 
-let btn = Array.from(document.querySelectorAll('.viza'));
-let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
-let dropdownBtn =Array.from(document.getElementsByClassName('dropdownBtn'));
-let dropdownBtn2 =Array.from(document.getElementsByClassName('dropdownBtn2'));
 let hamIcon = document.getElementById('hamIcon');
 
-
-dropdownBtn.forEach((item)=>{
-  item.addEventListener('click', function () {
-    item.querySelector('.arrowSvg').classList.toggle('active');
-    item.nextElementSibling.classList.toggle('active');
-  })
+hamIcon.addEventListener('click', function () {
+  hamIcon.classList.toggle('active');
+  document.querySelector('.mobileMenu').classList.toggle('active');
 })
-dropdownBtn2.forEach((item)=>{
-  item.addEventListener('click', function () {
-    item.querySelector('.arrowSvg').classList.toggle('active');
-    item.nextElementSibling.nextElementSibling.classList.toggle('active');
-    item.nextElementSibling.classList.toggle('active');
-  })
-})
-
-btn.forEach((item) => {
-  item.addEventListener('mouseover', function () {
-    btn.forEach((items) => {items.classList.remove('active')});
-    item.classList.add('active');
-    let tabId = item.dataset.id;
-    tabContent.forEach((content) => {
-      let contentId = content.dataset.id;
-      if (tabId === contentId) {
-        content.classList.add('grid');
-        content.classList.remove('hidden');
-      } else {
-        content.classList.remove('grid');
-        content.classList.add('hidden');
-      }
-    })
-  })
-});
 
 
 // swiper
@@ -174,14 +143,4 @@ var swiperComment = new Swiper(".swiperComment", {
       direction: "vertical",
     }
   },
-});
-// radio input
-
-let addressItem=Array.from(document.getElementsByClassName('addressItem'));
-
-addressItem.forEach((item)=>{
-  item.addEventListener('click',function () {
-    addressItem.forEach((items)=>{items.classList.remove('active')});
-    item.classList.add('active');
-  })
 });
