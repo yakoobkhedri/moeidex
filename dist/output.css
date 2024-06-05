@@ -715,10 +715,6 @@ video {
   top: -2.25rem;
 }
 
-.-top-\[306px\] {
-  top: -306px;
-}
-
 .-top-\[36px\] {
   top: -36px;
 }
@@ -811,6 +807,10 @@ video {
   top: 90px;
 }
 
+.-top-\[1px\] {
+  top: -1px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -851,6 +851,10 @@ video {
   z-index: 50;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -865,14 +869,6 @@ video {
 
 .col-span-3 {
   grid-column: span 3 / span 3;
-}
-
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
-.col-span-5 {
-  grid-column: span 5 / span 5;
 }
 
 .m-5 {
@@ -1081,10 +1077,6 @@ video {
   margin-top: 2.25rem;
 }
 
-.mt-\[1000px\] {
-  margin-top: 1000px;
-}
-
 .mt-\[22px\] {
   margin-top: 22px;
 }
@@ -1111,6 +1103,46 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-\[1000px\] {
+  margin-top: 1000px;
+}
+
+.mt-\[800px\] {
+  margin-top: 800px;
+}
+
+.mt-\[1553px\] {
+  margin-top: 1553px;
+}
+
+.mt-\[794px\] {
+  margin-top: 794px;
+}
+
+.mt-\[970px\] {
+  margin-top: 970px;
+}
+
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .line-clamp-2 {
@@ -2008,6 +2040,10 @@ video {
   padding-top: 53px;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2313,10 +2349,6 @@ video {
   display: block;
   width: var(--scrollbar-width, 16px);
   height: var(--scrollbar-height, 16px);
-}
-
-.\[transform\:rotateY\(180deg\)\] {
-  transform: rotateY(180deg);
 }
 
 @font-face {
@@ -2737,6 +2769,10 @@ a {
   padding-right: 34px;
 }
 
+:is([dir="ltr"] .ltr\:pr-80) {
+  padding-right: 20rem;
+}
+
 :is([dir="ltr"] .ltr\:text-left) {
   text-align: left;
 }
@@ -2853,6 +2889,10 @@ a {
   padding-right: calc((100% - 1256px) / 2);
 }
 
+:is([dir="rtl"] .rtl\:pl-80) {
+  padding-left: 20rem;
+}
+
 :is([dir="rtl"] .rtl\:text-left) {
   text-align: left;
 }
@@ -2900,6 +2940,38 @@ a {
 
   .sm\:mt-72 {
     margin-top: 18rem;
+  }
+
+  .sm\:mt-\[555px\] {
+    margin-top: 555px;
+  }
+
+  .sm\:mt-52 {
+    margin-top: 13rem;
+  }
+
+  .sm\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
+  .sm\:mb-48 {
+    margin-bottom: 12rem;
+  }
+
+  .sm\:mb-60 {
+    margin-bottom: 15rem;
+  }
+
+  .sm\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .sm\:mt-32 {
+    margin-top: 8rem;
+  }
+
+  .sm\:mt-\[520px\] {
+    margin-top: 520px;
   }
 
   .sm\:block {
@@ -2962,6 +3034,18 @@ a {
   .sm\:px-\[30px\] {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .sm\:pb-52 {
+    padding-bottom: 13rem;
+  }
+
+  .sm\:pt-56 {
+    padding-top: 14rem;
+  }
+
+  .sm\:pb-96 {
+    padding-bottom: 24rem;
   }
 
   .sm\:text-right {
@@ -3053,6 +3137,10 @@ a {
   :is([dir="rtl"] .rtl\:sm\:pl-0) {
     padding-left: 0px;
   }
+
+  :is([dir="rtl"] .rtl\:sm\:pr-0) {
+    padding-right: 0px;
+  }
 }
 
 @media (min-width: 726px) {
@@ -3068,6 +3156,10 @@ a {
 
   .md\:-top-\[313px\] {
     top: -313px;
+  }
+
+  .md\:top-auto {
+    top: auto;
   }
 
   .md\:col-span-3 {
@@ -3110,6 +3202,10 @@ a {
 
   .md\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .md\:mt-\[794px\] {
+    margin-top: 794px;
   }
 
   .md\:block {
@@ -3295,6 +3391,10 @@ a {
     left: 2.5rem;
   }
 
+  .lg\:top-auto {
+    top: auto;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -3349,6 +3449,10 @@ a {
     margin-top: 2.25rem;
   }
 
+  .lg\:mt-\[1000px\] {
+    margin-top: 1000px;
+  }
+
   .lg\:mt-\[700px\] {
     margin-top: 700px;
   }
@@ -3359,10 +3463,6 @@ a {
 
   .lg\:mt-\[1200px\] {
     margin-top: 1200px;
-  }
-
-  .lg\:mt-\[1000px\] {
-    margin-top: 1000px;
   }
 
   .lg\:block {
@@ -3484,6 +3584,10 @@ a {
     border-bottom-left-radius: 9999px;
   }
 
+  :is([dir="ltr"] .ltr\:lg\:pl-16) {
+    padding-left: 4rem;
+  }
+
   :is([dir="ltr"] .ltr\:lg\:text-left) {
     text-align: left;
   }
@@ -3491,6 +3595,10 @@ a {
   :is([dir="rtl"] .rtl\:lg\:rounded-r-full) {
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pr-16) {
+    padding-right: 4rem;
   }
 
   :is([dir="rtl"] .rtl\:lg\:text-left) {
