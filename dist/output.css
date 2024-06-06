@@ -779,8 +779,16 @@ video {
   top: 1rem;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .top-6 {
   top: 1.5rem;
+}
+
+.top-8 {
+  top: 2rem;
 }
 
 .top-9 {
@@ -793,10 +801,6 @@ video {
 
 .top-\[90px\] {
   top: 90px;
-}
-
-.top-5 {
-  top: 1.25rem;
 }
 
 .-z-0 {
@@ -1140,6 +1144,10 @@ video {
   height: 0.75rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-56 {
   height: 14rem;
 }
@@ -1226,6 +1234,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-40 {
+  max-height: 10rem;
 }
 
 .w-1\/2 {
@@ -1324,16 +1336,8 @@ video {
   width: 100%;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
-.w-\[70\%\] {
-  width: 70%;
-}
-
-.w-\[71\%\] {
-  width: 71%;
+.w-24 {
+  width: 6rem;
 }
 
 .max-w-\[1536px\] {
@@ -1519,6 +1523,10 @@ video {
 
 .overflow-visible {
   overflow: visible;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded {
@@ -2190,6 +2198,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2338,6 +2352,23 @@ body {
 
 #hamIcon.active svg:first-child {
   display: none;
+}
+
+/* dropdown */
+
+.dropdown{
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+
+.dropdown.active{
+  opacity: 100%;
+  visibility: visible;
+}
+
+.dropdownBtn.active svg{
+  transform: rotate(180deg);
 }
 
 /* hover */
@@ -2532,6 +2563,11 @@ a {
   background-color: rgb(209 175 137 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-slate-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(209 175 137 / var(--tw-text-opacity));
@@ -2552,8 +2588,16 @@ a {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+:is([dir="ltr"] .ltr\:-left-28) {
+  left: -7rem;
+}
+
 :is([dir="ltr"] .ltr\:-left-6) {
   left: -1.5rem;
+}
+
+:is([dir="ltr"] .ltr\:-left-\[52px\]) {
+  left: -52px;
 }
 
 :is([dir="ltr"] .ltr\:-right-2) {
@@ -2580,10 +2624,6 @@ a {
   right: 0px;
 }
 
-:is([dir="ltr"] .ltr\:right-16) {
-  right: 4rem;
-}
-
 :is([dir="ltr"] .ltr\:right-2) {
   right: 0.5rem;
 }
@@ -2602,14 +2642,6 @@ a {
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
-}
-
-:is([dir="ltr"] .ltr\:-left-28) {
-  left: -7rem;
-}
-
-:is([dir="ltr"] .ltr\:-left-\[52px\]) {
-  left: -52px;
 }
 
 :is([dir="ltr"] .ltr\:ml-0) {
@@ -2731,16 +2763,20 @@ a {
   left: -4rem;
 }
 
+:is([dir="rtl"] .rtl\:-right-28) {
+  right: -7rem;
+}
+
 :is([dir="rtl"] .rtl\:-right-6) {
   right: -1.5rem;
 }
 
-:is([dir="rtl"] .rtl\:left-0) {
-  left: 0px;
+:is([dir="rtl"] .rtl\:-right-\[52px\]) {
+  right: -52px;
 }
 
-:is([dir="rtl"] .rtl\:left-16) {
-  left: 4rem;
+:is([dir="rtl"] .rtl\:left-0) {
+  left: 0px;
 }
 
 :is([dir="rtl"] .rtl\:left-2) {
@@ -2755,28 +2791,12 @@ a {
   right: 0px;
 }
 
-:is([dir="rtl"] .rtl\:right-5) {
-  right: 1.25rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-14) {
-  right: -3.5rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-\[52px\]) {
-  right: -52px;
-}
-
-:is([dir="rtl"] .rtl\:-right-20) {
-  right: -5rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-28) {
-  right: -7rem;
-}
-
 :is([dir="rtl"] .rtl\:right-20) {
   right: 5rem;
+}
+
+:is([dir="rtl"] .rtl\:right-5) {
+  right: 1.25rem;
 }
 
 :is([dir="rtl"] .rtl\:ml-auto) {
@@ -2884,12 +2904,12 @@ a {
     top: -10rem;
   }
 
-  .sm\:top-auto {
-    top: auto;
-  }
-
   .sm\:top-0 {
     top: 0px;
+  }
+
+  .sm\:top-auto {
+    top: auto;
   }
 
   .sm\:col-span-6 {
@@ -2920,16 +2940,16 @@ a {
     margin-top: 18rem;
   }
 
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .sm\:mt-\[520px\] {
     margin-top: 520px;
   }
 
   .sm\:mt-\[555px\] {
     margin-top: 555px;
-  }
-
-  .sm\:mt-8 {
-    margin-top: 2rem;
   }
 
   .sm\:block {
@@ -2964,12 +2984,12 @@ a {
     gap: 2.5rem;
   }
 
-  .sm\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .sm\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 
   .sm\:p-6 {

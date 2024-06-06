@@ -17,7 +17,33 @@ hamIcon.addEventListener('click', function () {
   document.querySelector('.mobileMenu').classList.toggle('active');
 })
 
+// dropdown
+ let dropdownBtn = Array.from(document.getElementsByClassName('dropdownBtn'));
+ let dropdown = Array.from(document.getElementsByClassName('dropdown'));
+ let dropdownItem = Array.from(document.querySelectorAll('.dropdown li'));
 
+ dropdownItem.forEach((item)=>{
+  item.addEventListener('click',function () {
+    let itemImg= item.querySelector('img').src;
+    let itemText= item.querySelector('p').textContent;
+    item.parentElement.previousElementSibling.querySelector('p').textContent= itemText;
+    item.parentElement.previousElementSibling.querySelector('img').src= itemImg;
+  })
+ })
+
+dropdownBtn.forEach((item)=>{
+  item.addEventListener('click',function () {
+    dropdown.forEach((items)=>{items.classList.remove('active')});
+    item.classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.dropdownArea')) {
+      item.classList.remove('active');
+      item.nextElementSibling.classList.remove('active');
+    }
+  })
+  })
+})
 // swiper
 var services= new Swiper(".services", {
   loop: true,
