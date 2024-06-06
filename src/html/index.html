@@ -146,7 +146,7 @@
                 <a
                     class="rounded-2xl btnHover w-40 h-11 shadow-1 flex items-center justify-center gap-4 bg-secondary text-white text-sm font-bold">
                     <p>حساب کاربری</p>
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1" stroke="white"
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -204,10 +204,10 @@
         <!-- banner -->
         <section class="relative mt-16">
             <!-- shape -->
-             <img alt="img" src="../img/Ellipse 1.png" class="absolute rtl:left-0 ltr:right-0 inset-y-0 hidden sm:block my-auto -z-1">
+             <img alt="img" src="../img/Ellipse 1.png" class="absolute ltr:[transform:rotateY(180deg)] rtl:left-0 ltr:right-0 inset-y-0 hidden sm:block my-auto -z-1">
             <!--  -->
             <img alt="img" src="../img/Group 2.png"
-                class="absolute ltr:left-0 rtl:right-0 -top-32 -z-1 hidden min-[1100px]:block">
+                class="absolute ltr:[transform:rotateY(180deg)] ltr:left-0 rtl:right-0 -top-32 -z-1 hidden min-[1100px]:block">
             <div class="max-w-content mx-auto px-4">
                 <div
                     class="grid min-[900px]:flex grid-cols-12 gap-y-8 min-[900px]:gap-y-0 min-[900px]:gap-x-14 items-center rtl:mr-auto ltr:ml-auto min-[1100px]:ltr:pl-72 min-[1100px]:rtl:pr-72">
@@ -226,7 +226,7 @@
                             <a
                                 class="rounded-2xl btnHover w-40 h-11 shadow-1 flex items-center justify-center gap-4 bg-secondary text-white text-sm font-bold">
                                 <p>حساب کاربری</p>
-                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1"
                                         stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -235,7 +235,7 @@
                             </a>
                             <a class="w-40 h-11 flex items-center justify-center gap-4 text-primary text-sm font-bold">
                                 <p>بیشتر بدانید</p>
-                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1"
                                         stroke="#1E2D48" stroke-width="1.5" stroke-linecap="round"
@@ -380,7 +380,7 @@
                 <!-- swiper -->
                 <div class="relative">
                     <!-- bg -->
-                    <img alt="bg" src="../img/Group 88.png" class="absolute inset-0 w-full h-full -z-1">
+                    <img alt="bg" src="../img/Group 88.png" class="absolute inset-0 w-full h-full -z-1 ltr:[transform:rotateY(180deg)]">
                     <!--  -->
                     <div class="max-w-content mx-auto">
                         <div class="py-24 swiper services px-4 h-[402px]">
@@ -503,7 +503,7 @@
         <!-- The most profitable currencies -->
         <section class="pt-20 sm:pb-52 pb-20">
             <div>
-                <div class="max-w-content px-4 mx-auto flex items-center justify-between gap-3">
+                <div class="max-w-content px-4 mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
                     <div>
                         <div class="flex items-center gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
@@ -520,8 +520,8 @@
                         <p class="sm:text-lg font-semibold mt-2 opacity-50">ارزها و توکن هایی که بیشترین رشد را داشته
                             اند</p>
                     </div>
-                    <div class="flex items-center gap-2 relative rtl:left-16 ltr:right-16">
-                        <svg class="cursor-pointer swiper-button-prev w-12 h-12 rotate-180" width="52" height="52"
+                    <div class="flex items-center sm:gap-2 relative rtl:sm:left-16 ltr:sm:right-16 top-5 sm:top-0">
+                        <svg class="cursor-pointer active:scale-95 swiper-button-prev w-12 h-12 rotate-180" width="52" height="52"
                             viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="25.6" cy="25.5999" r="25.6" transform="rotate(-180 25.6 25.5999)"
                                 fill="#D1AF89" />
@@ -532,7 +532,7 @@
                                 d="M31.7247 27.4235C32.2077 27.1243 32.8158 27.5067 32.7923 28.0811C32.7345 29.4284 32.6344 30.6157 32.5125 31.4989C32.4938 31.5181 32.2452 33.0846 31.9592 33.6142C31.4606 34.5983 30.4821 35.1999 29.4302 35.1999L29.3427 35.1999C28.6643 35.1823 27.2216 34.5807 27.2216 34.5439C26.4948 34.2414 25.546 33.7294 24.5253 33.1134C24.0658 32.835 24.0549 32.1517 24.5144 31.8685L31.7247 27.4235Z"
                                 fill="white" />
                         </svg>
-                        <svg class="cursor-pointer swiper-button-next w-12 h-12 rotate-180" width="52" height="52"
+                        <svg class="cursor-pointer active:scale-95 swiper-button-next w-12 h-12 rotate-180" width="52" height="52"
                             viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="26.2" cy="25.6" r="25.6" fill="#D1AF89" />
                             <path
@@ -544,7 +544,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="mt-8 rtl:pr-custom ltr:pl-custom">
+                <div class="sm:mt-8 mt-14 rtl:pr-custom ltr:pl-custom">
                     <div class="swiper currencies rtl:pl-4 rtl:md:pl-0 ltr:pr-4 ltr:md:pr-0 ltr: rtl:pr-4 ltr:pl-4">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1237,9 +1237,9 @@
         <section class="relative">
             <!-- shape -->
             <img alt="img" src="../img/Ellipse 2.png"
-                class="absolute rtl:right-0 ltr:left-0 -z-2 top-0 bottom-0 my-auto hidden sm:block">
+                class="absolute rtl:right-0 ltr:left-0 ltr:[transform:rotateY(180deg)] -z-2 top-0 bottom-0 my-auto hidden sm:block">
             <img alt="img" src="../img/Group 82.png"
-                class="absolute rtl:right-0 ltr:left-0 -z-1 -top-12 hidden lg:block">
+                class="absolute rtl:right-0 ltr:left-0 -z-1 -top-12 hidden lg:block ltr:[transform:rotateY(180deg)]">
             <!--  -->
             <div class="max-w-content mx-auto px-4">
                 <div class="lg:max-w-[647px] rtl:mr-auto ltr:ml-auto">
@@ -1260,7 +1260,7 @@
                         <a
                             class="rounded-2xl btnHover w-40 h-11 shadow-1 flex items-center justify-center gap-4 bg-secondary text-white text-sm font-bold">
                             <p>حساب کاربری</p>
-                            <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                            <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1" stroke="white"
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1268,7 +1268,7 @@
                         </a>
                         <a class="w-40 h-11 flex items-center justify-center gap-4 text-primary text-sm font-bold">
                             <p>بیشتر بدانید</p>
-                            <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                            <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1"
                                     stroke="#1E2D48" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1338,7 +1338,7 @@
         <!-- wallet services -->
         <section class="relative">
              <!-- shape -->
-             <img alt="img" src="../img/Ellipse 1.png" class="absolute rtl:left-0 ltr:right-0 inset-y-0 block my-auto -z-1">
+             <img alt="img" src="../img/Ellipse 1.png" class="absolute ltr:[transform:rotateY(180deg)] rtl:left-0 ltr:right-0 inset-y-0 block my-auto -z-1">
             <!--  -->
             <div>
                 <div class="max-w-content mx-auto px-4 relative">
@@ -1351,7 +1351,7 @@
                 <!-- swiper -->
                 <div class="relative">
                     <!-- bg -->
-                    <img alt="bg" src="../img/Group 88.png" class="absolute inset-0 w-full h-full -z-1">
+                    <img alt="bg" src="../img/Group 88.png" class="absolute ltr:[transform:rotateY(180deg)] inset-0 w-full h-full -z-1">
                     <!--  -->
                     <div class="max-w-content mx-auto">
                         <div class="py-24 swiper px-4 walletServices h-[402px] relative -top-11">
@@ -1704,7 +1704,7 @@
         <!-- live price -->
         <section class="relative">
                 <!-- shape -->
-                <img alt="img" src="../img/Ellipse 1.png" class="absolute rtl:left-0 ltr:right-0 -bottom-96 hidden sm:block my-auto -z-1">
+                <img alt="img" src="../img/Ellipse 1.png" class="absolute ltr:[transform:rotateY(180deg)] rtl:left-0 ltr:right-0 -bottom-96 hidden sm:block my-auto -z-1">
                 <!--  -->
             <div class="max-w-content mx-auto px-4">
                 <div class="rounded-2xl bg-white p-[30px] pb-3 shadow-4">
@@ -2590,7 +2590,7 @@
         <!-- services -->
         <section class="sm:mt-[555px] mt-96 relative bg-primary pb-7">
             <!-- bg -->
-            <img alt="bg" src="../img/Union1.png" class="absolute inset-x-0 bottom-0 w-fuul block -z-1 -top-52 md:-top-[313px] h-80 min-[726px]:h-auto">
+            <img alt="bg" src="../img/Union1.png" class="absolute ltr:[transform:rotateY(180deg)] inset-x-0 bottom-0 w-fuul block -z-1 -top-52 md:-top-[313px] h-80 min-[726px]:h-auto">
             <!--  -->
             <div class="max-w-content mx-auto px-4">
                 <div class="grid grid-cols-12 gap-4 lg:gap-5 xl:gap-12 items-center">
@@ -2610,7 +2610,7 @@
                             <a
                                 class="rounded-2xl btnHover w-44 h-11 shadow-1 flex items-center justify-center gap-4 bg-secondary text-white text-sm font-bold">
                                 <p>حساب کاربری</p>
-                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1"
                                         stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -2619,7 +2619,7 @@
                             </a>
                             <a class="w-40 h-11 flex items-center justify-center gap-4 text-white text-sm font-bold">
                                 <p>بیشتر بدانید</p>
-                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1"
                                         stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -2650,7 +2650,7 @@
                                 <a
                                     class="w-40 h-11 mt-16 flex items-center justify-center gap-4 text-primary text-sm font-bold">
                                     <p>بیشتر بدانید</p>
-                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                    <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1"
                                             stroke="#1E2D48" stroke-width="1.5" stroke-linecap="round"
@@ -2680,7 +2680,7 @@
                                 <a
                                     class="w-40 h-11 mt-16 flex items-center justify-center gap-4 text-white text-sm font-bold">
                                     <p>بیشتر بدانید</p>
-                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                    <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1"
                                             stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -2701,7 +2701,7 @@
                 <div class="bg-[#E3E8F2] rounded-2xl gap-5 lg:gap-24 flex-col md:flex-row flex items-center relative p-10">
                     <!-- shape -->
                     <img alt="shape" src="../img/Pattern (3).png"
-                        class="absolute -z-0 rtl:left-0 ltr:right-0 top-0 bottom-0 h-full hidden md:block">
+                        class="absolute -z-0 ltr:[transform:rotateY(180deg)] rtl:left-0 ltr:right-0 top-0 bottom-0 h-full hidden md:block">
                     <!--  -->
                     <div
                         class="flex items-center justify-center flex-shrink-0 -mt-[127px] blur-9 rtl:md:-mr-24 ltr:md:-ml-24 w-60 h-60 relative bg-[#FFFFFF1A] border-2 border-white-1 shadow-5 scale-custom rounded-[28px]">
@@ -2722,7 +2722,7 @@
                     <a
                         class="rounded-2xl btnHover rtl:ml-auto ltr:mr-auto rtl:md:ml-0 ltr:md:mr-0 rtl:mr-auto ltr:ml-auto relative flex-shrink-0 z-1 w-52 h-11 shadow-1 flex items-center justify-center gap-3 bg-secondary text-white text-sm font-bold">
                         <p>ساخت کیف پول</p>
-                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1" stroke="white"
                                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2734,7 +2734,7 @@
         <!-- testimonials -->
         <section class="sm:mt-52 sm:mb-60 rtl:pr-custom ltr:pl-custom relative">
              <!-- shape -->
-             <img alt="img" src="../img/Ellipse 2.png" class="absolute rtl:right-0 ltr:left-0 -z-2 inset-y-0 my-auto hidden sm:block">
+             <img alt="img" src="../img/Ellipse 2.png" class="absolute ltr:[transform:rotateY(180deg)] rtl:right-0 ltr:left-0 -z-2 inset-y-0 my-auto hidden sm:block">
              <!--  -->
             <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-10">
                 <div class="px-4">
@@ -3080,7 +3080,7 @@
         <!-- blog -->
         <section class="relative pb-60">
              <!-- shape -->
-             <img alt="img" src="../img/Ellipse 1.png" class="absolute rtl:left-0 ltr:right-0 -z-2 inset-y-0 my-auto block">
+             <img alt="img" src="../img/Ellipse 1.png" class="absolute ltr:[transform:rotateY(180deg)] rtl:left-0 ltr:right-0 -z-2 inset-y-0 my-auto block">
             <!-- wave -->
             <div id="divider_id" class="website-divider-container-381466 rotate-180">
                 <svg xmlns="http://www.w3.org/2000/svg" class="divider-img-381466" viewBox="0 0 1080 200"
@@ -3093,7 +3093,7 @@
             <!--  -->
             <div class="max-w-content mx-auto px-4 mt-40">
                 <div class="flex flex-wrap items-center justify-between gap-3 xl:gap-4 rounded-t-2xl bg-primary p-3 mx-10">
-                    <div class="flex flex-wrap items-center gap-2">
+                    <div class="flex flex-wrap items-center gap-2 lg:w-[64%] xl:w-[71%]">
                         <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.5" clip-path="url(#clip0_995_984)">
                                 <path opacity="0.4"
@@ -3114,9 +3114,9 @@
                         <p class="text-white hidden sm:block">در وبلاگ معیدکس شما به آرشیواخبار و آموزش های بروز و معتبر دسترسی خواهید
                             داشت</p>
                     </div>
-                    <div class="flex items-center justify-center flex-wrap mx-auto lg:mx-0 gap-2">
-                        <div class="flex items-center gap-2">
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                    <div class="flex items-center justify-center flex-wrap mx-auto lg:mx-0 gap-2 relative">
+                        <div class="lg:flex hidden items-center gap-2">
+                            <svg class="swiper-button-next ltr:[transform:rotateY(180deg)] active:scale-95 ltr:-left-28 rtl:-right-28 w-12 h-12 absolute" width="42" height="42" viewBox="0 0 42 42" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="21.1206" cy="20.8794" r="20.8794" fill="black" fill-opacity="0.22" />
                                 <path
@@ -3126,7 +3126,7 @@
                                     d="M16.1259 18.7395C15.7319 18.9836 15.236 18.6717 15.2551 18.2032C15.3023 17.1043 15.3839 16.136 15.4833 15.4156C15.4986 15.4 15.7013 14.1223 15.9346 13.6904C16.3413 12.8878 17.1393 12.3971 17.9973 12.3971H18.0687C18.622 12.4115 19.7986 12.9021 19.7986 12.9322C20.3914 13.1788 21.1652 13.5964 21.9977 14.0989C22.3725 14.3259 22.3814 14.8832 22.0066 15.1142L16.1259 18.7395Z"
                                     fill="white" />
                             </svg>
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                            <svg class="swiper-button-prev ltr:[transform:rotateY(180deg)] active:scale-95 ltr:-left-[52px] rtl:-right-[52px] w-12 h-12 absolute" width="42" height="42" viewBox="0 0 42 42" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20.8794" cy="20.8794" r="20.8794" transform="rotate(-180 20.8794 20.8794)"
                                     fill="black" fill-opacity="0.22" />
@@ -3139,9 +3139,9 @@
                             </svg>
                         </div>
                         <a
-                            class="w-[173px] h-[51px] flex items-center justify-between p-2 rounded-2xl bg-white gap-4 text-sm font-bold">
+                            class="w-[173px] h-[51px] btnHover flex items-center justify-between p-2 rtl:pr-4 ltr:pl-4 rounded-2xl bg-white gap-4 text-sm font-bold">
                             <p>مشاهده همه</p>
-                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                            <svg class="ltr:[transform:rotateY(180deg)]" width="39" height="39" viewBox="0 0 39 39" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.199951" y="0.375" width="38.4" height="38.25" rx="19.125" fill="#1E2D48" />
                                 <path d="M21.7999 24.2812L16.9999 19.5L21.7999 14.7187" stroke="white"
@@ -3256,7 +3256,7 @@
         <section class="sm:mt-72 mt-10 relative bg-primary pb-7">
             <!-- bg -->
             <img alt="bg" src="../img/Union1.png"
-                class="absolute inset-x-0 bottom-0 w-fuul block -z-1 -top-52 md:-top-[313px] h-80 min-[726px]:h-auto">
+                class="absolute inset-x-0 bottom-0 w-fuul ltr:[transform:rotateY(180deg)] block -z-1 -top-52 md:-top-[313px] h-80 min-[726px]:h-auto">
             <!--  -->
             <div class="max-w-content mx-auto px-4">
                 <div class="grid grid-cols-12 gap-4 lg:gap-10 items-center">
@@ -3314,7 +3314,7 @@
         <!-- faqs -->
         <section class="my-36 sm:mt-36 mt-10 relative">
              <!-- shape -->
-             <img alt="img" src="../img/Ellipse 2.png" class="absolute rtl:right-0 ltr:left-0 -z-2 inset-y-0 my-auto block">
+             <img alt="img" src="../img/Ellipse 2.png" class="absolute ltr:[transform:rotateY(180deg)] rtl:right-0 ltr:left-0 -z-2 inset-y-0 my-auto block">
              <!--  -->
             <div class="max-w-content mx-auto px-4">
                 <div class="bg-white rounded-2xl shadow-4 p-4 pt-8 sm:p-8">
@@ -3533,7 +3533,7 @@
         <section class="bg-primary relative z-1">
             <!-- shape -->
             <img alt="shape" src="../img/Pattern (4).png"
-                class="absolute -z-1 rtl:left-0 ltr:right-0 top-0 bottom-0 h-full hidden md:block">
+                class="absolute ltr:[transform:rotateY(180deg)] -z-1 rtl:left-0 ltr:right-0 top-0 bottom-0 h-full hidden md:block">
             <svg class="-z-0 rotate-180 -top-[1px] absolute mx-auto inset-x-0" width="275" height="44" viewBox="0 0 275 44"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -3564,7 +3564,7 @@
                         <a
                             class="rounded-2xl btnHover w-40 h-11 flex-shrink-0  shadow-1 flex items-center justify-center gap-4 bg-secondary text-white text-sm font-bold">
                             <p>دریافت کد دعوت</p>
-                            <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                            <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1" stroke="white"
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -3573,7 +3573,7 @@
                         <a
                             class="w-28 h-11 flex-shrink-0 flex items-center justify-center gap-4 text-white text-sm font-bold">
                             <p>بیشتر بدانید</p>
-                            <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                            <svg class="ltr:[transform:rotateY(180deg)]" width="13" height="11" viewBox="0 0 13 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.5" d="M1.25 5.5H11.75M1.25 5.5L5.75 10M1.25 5.5L5.75 1" stroke="white"
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -3588,7 +3588,7 @@
         <!-- buy currency -->
         <section class="sm:mb-60 mb-32 relative">
              <!-- shape -->
-             <img alt="img" src="../img/Ellipse 1.png" class="absolute rtl:left-0 ltr:right-0 -z-2 inset-y-0 my-auto block">
+             <img alt="img" src="../img/Ellipse 1.png" class="absolute ltr:[transform:rotateY(180deg)] rtl:left-0 ltr:right-0 -z-2 inset-y-0 my-auto block">
             <!-- wave -->
             <div id="divider_id" class="website-divider-container-381466 rotate-180">
                 <svg xmlns="http://www.w3.org/2000/svg" class="divider-img-381466" viewBox="0 0 1080 200"
@@ -3661,7 +3661,7 @@
         <!-- app -->
         <section class="sm:mt-72 mt-0 mb-[233px] relative">
              <!-- shape -->
-             <img alt="img" src="../img/Ellipse 2.png" class="absolute rtl:right-0 ltr:left-0 -z-2 inset-y-0 my-auto block">
+             <img alt="img" src="../img/Ellipse 2.png" class="absolute ltr:[transform:rotateY(180deg)] rtl:right-0 ltr:left-0 -z-2 inset-y-0 my-auto block">
              <!--  -->
             <div class="max-w-content mx-auto px-5 relative z-3">
                 <!-- shape -->
@@ -3724,7 +3724,7 @@
     <!-- footer -->
     <footer class="relative mt-80 lg:mt-[700px]">
         <!-- bg -->
-        <img alt="bg" src="../img/Group 2272.png" class="absolute lg:block hidden -z-0 w-full h-[1690px] inset-x-0 bottom-16">
+        <img alt="bg" src="../img/Group 2272.png" class="absolute ltr:[transform:rotateY(180deg)] lg:block hidden -z-0 w-full h-[1690px] inset-x-0 bottom-16">
         <!--  -->
         <div class="bg-primary py-14 pt-24 lg:pt-14">
             <div class="max-w-content mx-auto px-4 relative">
@@ -3979,7 +3979,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/play-video.js"></script>
 </body>

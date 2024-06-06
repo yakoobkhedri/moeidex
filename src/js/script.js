@@ -125,10 +125,10 @@ var blogSwiper= new Swiper(".blogSwiper", {
     delay: 2500,
     disableOnInteraction: false,
   },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  }
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 var swiperComment = new Swiper(".swiperComment", {
   slidesPerView: 1,
