@@ -17,6 +17,30 @@ hamIcon.addEventListener('click', function () {
   document.querySelector('.mobileMenu').classList.toggle('active');
 })
 
+// replace element
+
+function changePosition() {
+  let el1=document.getElementById('el1');
+  let el2=document.getElementById('el2');
+  let parent=document.getElementById('parent');
+  
+  if (el2.nextElementSibling===el1) {
+    parent.insertBefore(el1,el2)
+  } else {
+    parent.insertBefore(el2,el1)
+  }
+}
+function changePosition2() {
+  let el3=document.getElementById('el3');
+  let el4=document.getElementById('el4');
+  let parent2=document.getElementById('parent2');
+  
+  if (el4.nextElementSibling===el3) {
+    parent2.insertBefore(el3,el4)
+  } else {
+    parent2.insertBefore(el4,el3)
+  }
+}
 // tabs
 
 let tabs= Array.from(document.querySelectorAll('.tabs > div'));
@@ -88,10 +112,6 @@ var services= new Swiper(".services", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
   }
 });
 var currencies= new Swiper(".currencies", {
@@ -130,10 +150,6 @@ var walletServices= new Swiper(".walletServices", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
   }
 });
 var testimonials= new Swiper(".testimonials", {

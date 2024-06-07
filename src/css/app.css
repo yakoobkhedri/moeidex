@@ -57,6 +57,20 @@ body {
 .tabs > div img.last,.tabs > div.active img.first,.tabContent > div.active{
   display: block;
 }
+.tabs > div.active svg path{
+  stroke: white;
+}
+.tabs > div svg path{
+  stroke: #1E2D48;
+}
+.tabs > div.active p{
+  color: white;
+  opacity: 100%;
+}
+.tabs > div p{
+  color: #1E2D48;
+  opacity: 50%;
+}
 /* dropdown */
 .dropdown{
   opacity: 0;

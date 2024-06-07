@@ -2368,6 +2368,24 @@ body {
   display: block;
 }
 
+.tabs > div.active svg path{
+  stroke: white;
+}
+
+.tabs > div svg path{
+  stroke: #1E2D48;
+}
+
+.tabs > div.active p{
+  color: white;
+  opacity: 100%;
+}
+
+.tabs > div p{
+  color: #1E2D48;
+  opacity: 50%;
+}
+
 /* dropdown */
 
 .dropdown{
@@ -2606,12 +2624,12 @@ a {
   left: -7rem;
 }
 
-:is([dir="ltr"] .ltr\:-left-3) {
-  left: -0.75rem;
-}
-
 :is([dir="ltr"] .ltr\:-left-6) {
   left: -1.5rem;
+}
+
+:is([dir="ltr"] .ltr\:-left-\[19px\]) {
+  left: -19px;
 }
 
 :is([dir="ltr"] .ltr\:-left-\[52px\]) {
@@ -2789,12 +2807,12 @@ a {
   right: -7rem;
 }
 
-:is([dir="rtl"] .rtl\:-right-3) {
-  right: -0.75rem;
-}
-
 :is([dir="rtl"] .rtl\:-right-6) {
   right: -1.5rem;
+}
+
+:is([dir="rtl"] .rtl\:-right-\[19px\]) {
+  right: -19px;
 }
 
 :is([dir="rtl"] .rtl\:-right-\[52px\]) {
