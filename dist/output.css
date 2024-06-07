@@ -2331,6 +2331,10 @@ body {
   overflow-x:hidden;
 }
 
+section{
+  overflow-x: hidden;
+}
+
 /* mobile menu */
 
 .mobileMenu.active {
