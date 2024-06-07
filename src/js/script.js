@@ -28,14 +28,15 @@ hamIcon.addEventListener('click', function () {
     let itemText= item.querySelector('p').textContent;
     item.parentElement.previousElementSibling.querySelector('p').textContent= itemText;
     item.parentElement.previousElementSibling.querySelector('img').src= itemImg;
+    item.parentElement.classList.remove('active');
   })
  })
 
 dropdownBtn.forEach((item)=>{
   item.addEventListener('click',function () {
     dropdown.forEach((items)=>{items.classList.remove('active')});
-    item.classList.toggle('active');
-    item.nextElementSibling.classList.toggle('active');
+    item.classList.add('active');
+    item.nextElementSibling.classList.add('active');
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.dropdownArea')) {
       item.classList.remove('active');

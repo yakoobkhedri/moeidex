@@ -1144,10 +1144,6 @@ video {
   height: 0.75rem;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .h-56 {
   height: 14rem;
 }
@@ -1260,6 +1256,10 @@ video {
   width: 4rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -1334,10 +1334,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .max-w-\[1536px\] {
@@ -2962,6 +2958,10 @@ a {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:max-w-\[303px\] {
