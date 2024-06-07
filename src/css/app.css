@@ -50,6 +50,13 @@ body {
 #hamIcon.active svg:first-child {
   display: none;
 }
+/* tab */
+.tabs > div img.first,.tabs > div.active img.last,.tabContent > div{
+  display: none;
+}
+.tabs > div img.last,.tabs > div.active img.first,.tabContent > div.active{
+  display: block;
+}
 /* dropdown */
 .dropdown{
   opacity: 0;

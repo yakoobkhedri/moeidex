@@ -245,11 +245,14 @@
                     </div>
                     <div class="min-[900px]:col-span-5 col-span-12 flex-shrink-0">
                         <div class="max-w-[355px] w-full mx-auto">
-                            <div class="flex items-center">
-                                <div class="flex items-center gap-3 text-white relative w-1/2 h-11 cursor-pointer pt-1">
+                            <!-- tabs -->
+                            <div class="flex items-center tabs">
+                                <div data-id="1" class="active flex items-center gap-3 text-white relative w-1/2 h-11 cursor-pointer pt-1">
                                     <!-- bg -->
                                     <img alt="bg" src="../img/Rectangle 115.png"
-                                        class="absolute -z-1 w-full h-full -bottom-1">
+                                        class="absolute -z-1 w-full h-full -bottom-1 first">
+                                        <img alt="bg" src="../img/Rectangle 116.png"
+                                        class="absolute -z-1 w-full h-full -bottom-1 ltr:left-.5 rtl:right-.5 last">
                                     <!--  -->
                                     <svg class="rtl:mr-12 ltr:ml-12" width="12" height="13" viewBox="0 0 12 13"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -265,11 +268,13 @@
                                     </svg>
                                     <p>خرید</p>
                                 </div>
-                                <div
+                                <div data-id="2"
                                     class="flex items-center gap-3 text-primary relative w-1/2 h-11 cursor-pointer pt-1">
                                     <!-- bg -->
+                                    <img alt="bg" src="../img/Rectangle 115.png"
+                                    class="absolute -z-1 w-full h-full -bottom-1 first rtl:-right-3 ltr:-left-3">
                                     <img alt="bg" src="../img/Rectangle 116.png"
-                                        class="absolute -z-1 w-full h-full -bottom-1 ltr:-left-6 rtl:-right-6">
+                                        class="absolute -z-1 w-full h-full -bottom-1 ltr:-left-6 rtl:-right-6 last">
                                     <!--  -->
                                     <svg class="rtl:mr-5 ltr:ml-5" width="11" height="13" viewBox="0 0 11 13"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,84 +285,28 @@
                                     <p class="opacity-50">فروش</p>
                                 </div>
                             </div>
-                            <div class="bg-white rounded-3xl ltr:rounded-tl-none shadow-2 p-5 pt-3 rtl:rounded-tr-none">
-                                <div>
-                                    <div class="relative">
-                                        <!-- change icon -->
-                                        <svg class="absolute active:scale-95 m-auto inset-0 top-9 cursor-pointer" width="69" height="69"
-                                            viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="34.5" y="-3.07228" width="53.1352" height="53.1352" rx="15.207"
-                                                transform="rotate(45 34.5 -3.07228)" fill="#1E2D48" stroke="#EDEDED"
-                                                stroke-width="4.34485" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M30.5971 23.6107C30.7637 23.4461 30.9884 23.3538 31.2225 23.3538C31.4567 23.3538 31.6814 23.4461 31.8479 23.6107L34.205 25.95C34.4585 26.2009 34.5345 26.5786 34.3964 26.9055C34.3289 27.0663 34.2155 27.2036 34.0703 27.3001C33.9251 27.3966 33.7546 27.448 33.5803 27.4479H31.2232C27.1515 27.4466 23.8528 30.7212 23.8528 34.7587C23.8528 38.7961 27.1553 42.0707 31.2232 42.0707H31.8112C32.3003 42.0707 32.6957 42.4635 32.6957 42.9476C32.6952 43.0633 32.6719 43.1777 32.6272 43.2844C32.5825 43.3911 32.5172 43.4879 32.4351 43.5693C32.3529 43.6507 32.2556 43.7152 32.1485 43.759C32.0415 43.8028 31.9268 43.8251 31.8112 43.8246H31.2232C26.177 43.8246 22.0863 39.7643 22.0863 34.7587C22.0863 29.753 26.177 25.6928 31.2232 25.6928H31.4449L30.5971 24.8513C30.515 24.7701 30.4498 24.6734 30.4053 24.5668C30.3608 24.4602 30.3378 24.3459 30.3378 24.2304C30.3378 24.1149 30.3608 24.0005 30.4053 23.8939C30.4498 23.7873 30.515 23.6906 30.5971 23.6094V23.6107ZM36.8219 26.5697C36.8219 26.0856 37.2173 25.6928 37.7064 25.6928H38.2957C43.3406 25.6928 47.4313 29.753 47.4313 34.7587C47.4313 39.7643 43.3406 43.8246 38.2944 43.8246H38.0726L38.9204 44.666C39.0027 44.7471 39.0681 44.8438 39.1127 44.9504C39.1573 45.057 39.1803 45.1714 39.1803 45.287C39.1803 45.4025 39.1573 45.5169 39.1127 45.6235C39.0681 45.7301 39.0027 45.8268 38.9204 45.9079C38.7541 46.0728 38.5293 46.1654 38.2951 46.1654C38.0608 46.1654 37.836 46.0728 37.6697 45.9079L35.3126 43.5673C35.1892 43.4452 35.105 43.289 35.0709 43.1188C35.0369 42.9486 35.0544 42.772 35.1212 42.6118C35.1887 42.451 35.3021 42.3138 35.4473 42.2173C35.5925 42.1208 35.763 42.0693 35.9373 42.0694H38.2944C42.3648 42.0694 45.6635 38.7961 45.6635 34.7587C45.6635 30.7212 42.3648 27.4466 38.2957 27.4466H37.7064C37.5908 27.4471 37.4761 27.4249 37.3691 27.3811C37.262 27.3373 37.1647 27.2728 37.0825 27.1914C37.0004 27.1099 36.9351 27.0131 36.8904 26.9065C36.8456 26.7998 36.8224 26.6854 36.8219 26.5697Z"
-                                                fill="white" />
-                                        </svg>
-                                        <!--  -->
-                                        <div>
-                                            <label class="text-primary text-xs font-bold">مقدار زیر را میگیرید</label>
-                                            <div
-                                                class="mt-3 bg-white px-4 border border-[#0000001A] rounded-2xl flex items-center gap-2 h-[53px]">
-                                                <input placeholder="تعداد را وارد کنید"
-                                                    class="outline-none bg-transparent w-full text-sm flex-grow">
-                                                <div class="flex-shrink-0 relative dropdownArea">
-                                                    <div class="flex items-center gap-4 cursor-pointer dropdownBtn">
-                                                        <svg class="flex-shrink-0 transition-all" width="9" height="7"
-                                                            viewBox="0 0 9 7" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <g opacity="0.3">
-                                                                <path
-                                                                    d="M8.17142 1.61407L4.39999 5.3855L0.628569 1.61407"
-                                                                    stroke="#1E2D48" stroke-width="1.25714"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </g>
-                                                        </svg>
-                                                        <p class="text-primary font-semibold">BTC</p>
-                                                        <img alt="img" src="../img/Component 1.png"
-                                                            class="block w-6 h-6 rounded-full">
-                                                    </div>
-                                                    <!-- dropdown -->
-                                                     <ul class="bg-white z-10 dropdown max-h-40 rounded-xl overflow-y-auto shadow-md absolute w-24 inset-x-0 top-8">
-                                                        <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                            <p class="text-primary font-semibold">BTC</p>
-                                                            <img alt="img" src="../img/Component 1.png"
-                                                            class="block w-6 h-6 rounded-full">
-                                                        </li>
-                                                        <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                            <p class="text-primary font-semibold">NTC</p>
-                                                            <img alt="img" src="../img/uxxnnryrvztj.webp"
-                                                            class="block w-6 h-6 rounded-full">
-                                                        </li>
-                                                        <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                            <p class="text-primary font-semibold">BTC</p>
-                                                            <img alt="img" src="../img/Component 1.png"
-                                                            class="block w-6 h-6 rounded-full">
-                                                        </li>
-                                                        <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                            <p class="text-primary font-semibold">NTC</p>
-                                                            <img alt="img" src="../img/uxxnnryrvztj.webp"
-                                                            class="block w-6 h-6 rounded-full">
-                                                        </li>
-                                                        <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                            <p class="text-primary font-semibold">BTC</p>
-                                                            <img alt="img" src="../img/Component 1.png"
-                                                            class="block w-6 h-6 rounded-full">
-                                                        </li>
-                                                        <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                            <p class="text-primary font-semibold">NTC</p>
-                                                            <img alt="img" src="../img/uxxnnryrvztj.webp"
-                                                            class="block w-6 h-6 rounded-full">
-                                                        </li>
-                                                     </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2">
-                                            <label class="text-primary text-xs font-bold">مقدار زیر را میگیرید</label>
-                                            <div
-                                                class="mt-3 bg-white px-4 border border-[#0000001A] rounded-2xl flex items-center gap-2 h-[53px]">
-                                                <input placeholder="قیمت نهایی"
-                                                    class="outline-none bg-transparent w-full text-sm flex-grow">
+                            <!-- tab content -->
+                             <div class="tabContent relative">
+                                <div data-id="1" class="bg-white active transition-all rounded-3xl ltr:rounded-tl-none shadow-2 p-5 pt-3 rtl:rounded-tr-none">
+                                    <div>
+                                        <div class="relative">
+                                            <!-- change icon -->
+                                            <svg class="absolute active:scale-95 m-auto inset-0 top-9 cursor-pointer" width="69" height="69"
+                                                viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="34.5" y="-3.07228" width="53.1352" height="53.1352" rx="15.207"
+                                                    transform="rotate(45 34.5 -3.07228)" fill="#1E2D48" stroke="#EDEDED"
+                                                    stroke-width="4.34485" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M30.5971 23.6107C30.7637 23.4461 30.9884 23.3538 31.2225 23.3538C31.4567 23.3538 31.6814 23.4461 31.8479 23.6107L34.205 25.95C34.4585 26.2009 34.5345 26.5786 34.3964 26.9055C34.3289 27.0663 34.2155 27.2036 34.0703 27.3001C33.9251 27.3966 33.7546 27.448 33.5803 27.4479H31.2232C27.1515 27.4466 23.8528 30.7212 23.8528 34.7587C23.8528 38.7961 27.1553 42.0707 31.2232 42.0707H31.8112C32.3003 42.0707 32.6957 42.4635 32.6957 42.9476C32.6952 43.0633 32.6719 43.1777 32.6272 43.2844C32.5825 43.3911 32.5172 43.4879 32.4351 43.5693C32.3529 43.6507 32.2556 43.7152 32.1485 43.759C32.0415 43.8028 31.9268 43.8251 31.8112 43.8246H31.2232C26.177 43.8246 22.0863 39.7643 22.0863 34.7587C22.0863 29.753 26.177 25.6928 31.2232 25.6928H31.4449L30.5971 24.8513C30.515 24.7701 30.4498 24.6734 30.4053 24.5668C30.3608 24.4602 30.3378 24.3459 30.3378 24.2304C30.3378 24.1149 30.3608 24.0005 30.4053 23.8939C30.4498 23.7873 30.515 23.6906 30.5971 23.6094V23.6107ZM36.8219 26.5697C36.8219 26.0856 37.2173 25.6928 37.7064 25.6928H38.2957C43.3406 25.6928 47.4313 29.753 47.4313 34.7587C47.4313 39.7643 43.3406 43.8246 38.2944 43.8246H38.0726L38.9204 44.666C39.0027 44.7471 39.0681 44.8438 39.1127 44.9504C39.1573 45.057 39.1803 45.1714 39.1803 45.287C39.1803 45.4025 39.1573 45.5169 39.1127 45.6235C39.0681 45.7301 39.0027 45.8268 38.9204 45.9079C38.7541 46.0728 38.5293 46.1654 38.2951 46.1654C38.0608 46.1654 37.836 46.0728 37.6697 45.9079L35.3126 43.5673C35.1892 43.4452 35.105 43.289 35.0709 43.1188C35.0369 42.9486 35.0544 42.772 35.1212 42.6118C35.1887 42.451 35.3021 42.3138 35.4473 42.2173C35.5925 42.1208 35.763 42.0693 35.9373 42.0694H38.2944C42.3648 42.0694 45.6635 38.7961 45.6635 34.7587C45.6635 30.7212 42.3648 27.4466 38.2957 27.4466H37.7064C37.5908 27.4471 37.4761 27.4249 37.3691 27.3811C37.262 27.3373 37.1647 27.2728 37.0825 27.1914C37.0004 27.1099 36.9351 27.0131 36.8904 26.9065C36.8456 26.7998 36.8224 26.6854 36.8219 26.5697Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <!--  -->
+                                            <div>
+                                                <label class="text-primary text-xs font-bold">مقدار زیر را میگیرید</label>
+                                                <div
+                                                    class="mt-3 bg-white px-4 border border-[#0000001A] rounded-2xl flex items-center gap-2 h-[53px]">
+                                                    <input placeholder="تعداد را وارد کنید"
+                                                        class="outline-none bg-transparent w-full text-sm flex-grow">
                                                     <div class="flex-shrink-0 relative dropdownArea">
                                                         <div class="flex items-center gap-4 cursor-pointer dropdownBtn">
                                                             <svg class="flex-shrink-0 transition-all" width="9" height="7"
@@ -370,61 +319,265 @@
                                                                         stroke-linecap="round" stroke-linejoin="round" />
                                                                 </g>
                                                             </svg>
-                                                            <p class="text-primary font-semibold">IRI</p>
-                                                            <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                            <p class="text-primary font-semibold">BTC</p>
+                                                            <img alt="img" src="../img/Component 1.png"
                                                                 class="block w-6 h-6 rounded-full">
                                                         </div>
                                                         <!-- dropdown -->
                                                          <ul class="bg-white z-10 dropdown max-h-40 rounded-xl overflow-y-auto shadow-md absolute w-24 inset-x-0 top-8">
                                                             <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                                <p class="text-primary font-semibold">IRI</p>
-                                                                <img alt="img" src="../img/emojione_flag-for-iran.png"
-                                                                    class="block w-6 h-6 rounded-full">
+                                                                <p class="text-primary font-semibold">BTC</p>
+                                                                <img alt="img" src="../img/Component 1.png"
+                                                                class="block w-6 h-6 rounded-full">
                                                             </li>
                                                             <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                                <p class="text-primary font-semibold">UK</p>
-                                                                <img alt="img" src="../img/circle-flags_uk (2).png"
-                                                                    class="block w-6 h-6 rounded-full">
+                                                                <p class="text-primary font-semibold">NTC</p>
+                                                                <img alt="img" src="../img/uxxnnryrvztj.webp"
+                                                                class="block w-6 h-6 rounded-full">
                                                             </li>
                                                             <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                                <p class="text-primary font-semibold">IRI</p>
-                                                                <img alt="img" src="../img/emojione_flag-for-iran.png"
-                                                                    class="block w-6 h-6 rounded-full">
+                                                                <p class="text-primary font-semibold">BTC</p>
+                                                                <img alt="img" src="../img/Component 1.png"
+                                                                class="block w-6 h-6 rounded-full">
                                                             </li>
                                                             <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                                <p class="text-primary font-semibold">UK</p>
-                                                                <img alt="img" src="../img/circle-flags_uk (2).png"
-                                                                    class="block w-6 h-6 rounded-full">
+                                                                <p class="text-primary font-semibold">NTC</p>
+                                                                <img alt="img" src="../img/uxxnnryrvztj.webp"
+                                                                class="block w-6 h-6 rounded-full">
                                                             </li>
                                                             <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                                <p class="text-primary font-semibold">IRI</p>
-                                                                <img alt="img" src="../img/emojione_flag-for-iran.png"
-                                                                    class="block w-6 h-6 rounded-full">
+                                                                <p class="text-primary font-semibold">BTC</p>
+                                                                <img alt="img" src="../img/Component 1.png"
+                                                                class="block w-6 h-6 rounded-full">
                                                             </li>
                                                             <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
-                                                                <p class="text-primary font-semibold">UK</p>
-                                                                <img alt="img" src="../img/circle-flags_uk (2).png"
-                                                                    class="block w-6 h-6 rounded-full">
+                                                                <p class="text-primary font-semibold">NTC</p>
+                                                                <img alt="img" src="../img/uxxnnryrvztj.webp"
+                                                                class="block w-6 h-6 rounded-full">
                                                             </li>
                                                          </ul>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="text-primary text-xs font-bold">مقدار زیر را میگیرید</label>
+                                                <div
+                                                    class="mt-3 bg-white px-4 border border-[#0000001A] rounded-2xl flex items-center gap-2 h-[53px]">
+                                                    <input placeholder="قیمت نهایی"
+                                                        class="outline-none bg-transparent w-full text-sm flex-grow">
+                                                        <div class="flex-shrink-0 relative dropdownArea">
+                                                            <div class="flex items-center gap-4 cursor-pointer dropdownBtn">
+                                                                <svg class="flex-shrink-0 transition-all" width="9" height="7"
+                                                                    viewBox="0 0 9 7" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <g opacity="0.3">
+                                                                        <path
+                                                                            d="M8.17142 1.61407L4.39999 5.3855L0.628569 1.61407"
+                                                                            stroke="#1E2D48" stroke-width="1.25714"
+                                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                                    </g>
+                                                                </svg>
+                                                                <p class="text-primary font-semibold">IRI</p>
+                                                                <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                                    class="block w-6 h-6 rounded-full">
+                                                            </div>
+                                                            <!-- dropdown -->
+                                                             <ul class="bg-white z-10 dropdown max-h-40 rounded-xl overflow-y-auto shadow-md absolute w-24 inset-x-0 top-8">
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">IRI</p>
+                                                                    <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">UK</p>
+                                                                    <img alt="img" src="../img/circle-flags_uk (2).png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">IRI</p>
+                                                                    <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">UK</p>
+                                                                    <img alt="img" src="../img/circle-flags_uk (2).png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">IRI</p>
+                                                                    <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">UK</p>
+                                                                    <img alt="img" src="../img/circle-flags_uk (2).png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                             </ul>
+                                                        </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-[69px] flex justify-between items-end">
-                                        <div>
-                                            <p class="text-sm text-primary opacity-50">قیمت روز بیتکوین</p>
-                                            <p class="text-xl text-primary mt-1">
-                                                <span class="text-secondary font-black">2,210,870,704</span> تومان
-                                            </p>
+                                        <div class="mt-[69px] flex justify-between items-end">
+                                            <div>
+                                                <p class="text-sm text-primary opacity-50">قیمت روز بیتکوین</p>
+                                                <p class="text-xl text-primary mt-1">
+                                                    <span class="text-secondary font-black">2,210,870,704</span> تومان
+                                                </p>
+                                            </div>
+                                            <p class="text-primary font-extrabold">$43,686</p>
                                         </div>
-                                        <p class="text-primary font-extrabold">$43,686</p>
+                                        <a
+                                            class="h-14 bg-primary btnHover text-white mt-4 rounded-2xl font-bold shadow-3 flex items-center justify-center">خرید
+                                            بیتکوین</a>
                                     </div>
-                                    <a
-                                        class="h-14 bg-primary btnHover text-white mt-4 rounded-2xl font-bold shadow-3 flex items-center justify-center">خرید
-                                        بیتکوین</a>
                                 </div>
-                            </div>
+                                <div data-id="2" class="bg-white transition-all rounded-3xl ltr:rounded-tl-none shadow-2 p-5 pt-3 rtl:rounded-tr-none">
+                                    <div>
+                                        <div class="relative">
+                                            <!-- change icon -->
+                                            <svg class="absolute active:scale-95 m-auto inset-0 top-9 cursor-pointer" width="69" height="69"
+                                                viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="34.5" y="-3.07228" width="53.1352" height="53.1352" rx="15.207"
+                                                    transform="rotate(45 34.5 -3.07228)" fill="#1E2D48" stroke="#EDEDED"
+                                                    stroke-width="4.34485" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M30.5971 23.6107C30.7637 23.4461 30.9884 23.3538 31.2225 23.3538C31.4567 23.3538 31.6814 23.4461 31.8479 23.6107L34.205 25.95C34.4585 26.2009 34.5345 26.5786 34.3964 26.9055C34.3289 27.0663 34.2155 27.2036 34.0703 27.3001C33.9251 27.3966 33.7546 27.448 33.5803 27.4479H31.2232C27.1515 27.4466 23.8528 30.7212 23.8528 34.7587C23.8528 38.7961 27.1553 42.0707 31.2232 42.0707H31.8112C32.3003 42.0707 32.6957 42.4635 32.6957 42.9476C32.6952 43.0633 32.6719 43.1777 32.6272 43.2844C32.5825 43.3911 32.5172 43.4879 32.4351 43.5693C32.3529 43.6507 32.2556 43.7152 32.1485 43.759C32.0415 43.8028 31.9268 43.8251 31.8112 43.8246H31.2232C26.177 43.8246 22.0863 39.7643 22.0863 34.7587C22.0863 29.753 26.177 25.6928 31.2232 25.6928H31.4449L30.5971 24.8513C30.515 24.7701 30.4498 24.6734 30.4053 24.5668C30.3608 24.4602 30.3378 24.3459 30.3378 24.2304C30.3378 24.1149 30.3608 24.0005 30.4053 23.8939C30.4498 23.7873 30.515 23.6906 30.5971 23.6094V23.6107ZM36.8219 26.5697C36.8219 26.0856 37.2173 25.6928 37.7064 25.6928H38.2957C43.3406 25.6928 47.4313 29.753 47.4313 34.7587C47.4313 39.7643 43.3406 43.8246 38.2944 43.8246H38.0726L38.9204 44.666C39.0027 44.7471 39.0681 44.8438 39.1127 44.9504C39.1573 45.057 39.1803 45.1714 39.1803 45.287C39.1803 45.4025 39.1573 45.5169 39.1127 45.6235C39.0681 45.7301 39.0027 45.8268 38.9204 45.9079C38.7541 46.0728 38.5293 46.1654 38.2951 46.1654C38.0608 46.1654 37.836 46.0728 37.6697 45.9079L35.3126 43.5673C35.1892 43.4452 35.105 43.289 35.0709 43.1188C35.0369 42.9486 35.0544 42.772 35.1212 42.6118C35.1887 42.451 35.3021 42.3138 35.4473 42.2173C35.5925 42.1208 35.763 42.0693 35.9373 42.0694H38.2944C42.3648 42.0694 45.6635 38.7961 45.6635 34.7587C45.6635 30.7212 42.3648 27.4466 38.2957 27.4466H37.7064C37.5908 27.4471 37.4761 27.4249 37.3691 27.3811C37.262 27.3373 37.1647 27.2728 37.0825 27.1914C37.0004 27.1099 36.9351 27.0131 36.8904 26.9065C36.8456 26.7998 36.8224 26.6854 36.8219 26.5697Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <!--  -->
+                                            <div>
+                                                <label class="text-primary text-xs font-bold">مقدار زیر را میگیرید</label>
+                                                <div
+                                                    class="mt-3 bg-white px-4 border border-[#0000001A] rounded-2xl flex items-center gap-2 h-[53px]">
+                                                    <input placeholder="تعداد را وارد کنید"
+                                                        class="outline-none bg-transparent w-full text-sm flex-grow">
+                                                    <div class="flex-shrink-0 relative dropdownArea">
+                                                        <div class="flex items-center gap-4 cursor-pointer dropdownBtn">
+                                                            <svg class="flex-shrink-0 transition-all" width="9" height="7"
+                                                                viewBox="0 0 9 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <g opacity="0.3">
+                                                                    <path
+                                                                        d="M8.17142 1.61407L4.39999 5.3855L0.628569 1.61407"
+                                                                        stroke="#1E2D48" stroke-width="1.25714"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                </g>
+                                                            </svg>
+                                                            <p class="text-primary font-semibold">NTC</p>
+                                                            <img alt="img" src="../img/uxxnnryrvztj.webp"
+                                                                class="block w-6 h-6 rounded-full">
+                                                        </div>
+                                                        <!-- dropdown -->
+                                                         <ul class="bg-white z-10 dropdown max-h-40 rounded-xl overflow-y-auto shadow-md absolute w-24 inset-x-0 top-8">
+                                                            <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                <p class="text-primary font-semibold">BTC</p>
+                                                                <img alt="img" src="../img/Component 1.png"
+                                                                class="block w-6 h-6 rounded-full">
+                                                            </li>
+                                                            <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                <p class="text-primary font-semibold">NTC</p>
+                                                                <img alt="img" src="../img/uxxnnryrvztj.webp"
+                                                                class="block w-6 h-6 rounded-full">
+                                                            </li>
+                                                            <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                <p class="text-primary font-semibold">BTC</p>
+                                                                <img alt="img" src="../img/Component 1.png"
+                                                                class="block w-6 h-6 rounded-full">
+                                                            </li>
+                                                            <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                <p class="text-primary font-semibold">NTC</p>
+                                                                <img alt="img" src="../img/uxxnnryrvztj.webp"
+                                                                class="block w-6 h-6 rounded-full">
+                                                            </li>
+                                                            <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                <p class="text-primary font-semibold">BTC</p>
+                                                                <img alt="img" src="../img/Component 1.png"
+                                                                class="block w-6 h-6 rounded-full">
+                                                            </li>
+                                                            <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                <p class="text-primary font-semibold">NTC</p>
+                                                                <img alt="img" src="../img/uxxnnryrvztj.webp"
+                                                                class="block w-6 h-6 rounded-full">
+                                                            </li>
+                                                         </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="text-primary text-xs font-bold">مقدار زیر را میگیرید</label>
+                                                <div
+                                                    class="mt-3 bg-white px-4 border border-[#0000001A] rounded-2xl flex items-center gap-2 h-[53px]">
+                                                    <input placeholder="قیمت نهایی"
+                                                        class="outline-none bg-transparent w-full text-sm flex-grow">
+                                                        <div class="flex-shrink-0 relative dropdownArea">
+                                                            <div class="flex items-center gap-4 cursor-pointer dropdownBtn">
+                                                                <svg class="flex-shrink-0 transition-all" width="9" height="7"
+                                                                    viewBox="0 0 9 7" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <g opacity="0.3">
+                                                                        <path
+                                                                            d="M8.17142 1.61407L4.39999 5.3855L0.628569 1.61407"
+                                                                            stroke="#1E2D48" stroke-width="1.25714"
+                                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                                    </g>
+                                                                </svg>
+                                                                <p class="text-primary font-semibold">IRI</p>
+                                                                <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                                    class="block w-6 h-6 rounded-full">
+                                                            </div>
+                                                            <!-- dropdown -->
+                                                             <ul class="bg-white z-10 dropdown max-h-40 rounded-xl overflow-y-auto shadow-md absolute w-24 inset-x-0 top-8">
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">IRI</p>
+                                                                    <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">UK</p>
+                                                                    <img alt="img" src="../img/circle-flags_uk (2).png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">IRI</p>
+                                                                    <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">UK</p>
+                                                                    <img alt="img" src="../img/circle-flags_uk (2).png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">IRI</p>
+                                                                    <img alt="img" src="../img/emojione_flag-for-iran.png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                                <li class="flex items-center justify-between transition-all hover:bg-slate-100 gap-4 cursor-pointer p-2">
+                                                                    <p class="text-primary font-semibold">UK</p>
+                                                                    <img alt="img" src="../img/circle-flags_uk (2).png"
+                                                                        class="block w-6 h-6 rounded-full">
+                                                                </li>
+                                                             </ul>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-[69px] flex justify-between items-end">
+                                            <div>
+                                                <p class="text-sm text-primary opacity-50">قیمت روز بیتکوین</p>
+                                                <p class="text-xl text-primary mt-1">
+                                                    <span class="text-secondary font-black">2,210,870,704</span> تومان
+                                                </p>
+                                            </div>
+                                            <p class="text-primary font-extrabold">$43,686</p>
+                                        </div>
+                                        <a
+                                            class="h-14 bg-primary btnHover text-white mt-4 rounded-2xl font-bold shadow-3 flex items-center justify-center">خرید
+                                            بیتکوین</a>
+                                    </div>
+                                </div>
+                             </div>
                         </div>
                     </div>
                 </div>

@@ -17,6 +17,27 @@ hamIcon.addEventListener('click', function () {
   document.querySelector('.mobileMenu').classList.toggle('active');
 })
 
+// tabs
+
+let tabs= Array.from(document.querySelectorAll('.tabs > div'));
+let tabContent= Array.from(document.querySelectorAll('.tabContent > div'));
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', function() {
+    tabs.forEach((tabs) => {tabs.classList.remove('active')});
+    tab.classList.add('active');
+      let tabId = tab.dataset.id;
+      tabContent.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+      })
+  })
+})
+
 // dropdown
  let dropdownBtn = Array.from(document.getElementsByClassName('dropdownBtn'));
  let dropdown = Array.from(document.getElementsByClassName('dropdown'));
