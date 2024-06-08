@@ -50,17 +50,64 @@ body {
 #hamIcon.active svg:first-child {
   display: none;
 }
+/* scrollbar */
+
+.dropdown::-webkit-scrollbar {
+    width: 4px;
+    /* width of the entire scrollbar */
+}
+.dropdown::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+    margin: 29px 0;
+}
+.dropdown::-webkit-scrollbar-thumb {
+    background-color: gray;
+    /* color of the scroll thumb */
+    border-radius: 40px;
+    /* roundness of the scroll thumb */
+    border: 1px solid transparent;
+    /* creates padding around scroll thumb */
+}
+.dropdown{
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: gray transparent;
+    /* scroll thumb and track */
+    scroll-margin: 29px 0;
+}
+/* swiper */
+.swiper-pagination-bullet-active {
+  background-color: #1E2D48!important;
+  width: 33px!important;
+  height: 6px;
+  border-radius: 60px;
+}
+.swiper-pagination-bullet{
+  width: 10px;
+  height: 6px;
+  transition: all .4s;
+  border-radius: 60px;
+  background-color: #D9D9D9;
+  opacity: 1;
+}
 /* tab */
-.tabs > div img.first,.tabs > div.active img.last,.tabContent > div{
+.tabContent > div{
   display: none;
 }
-.tabs > div img.last,.tabs > div.active img.first,.tabContent > div.active{
+.tabContent > div.active{
   display: block;
 }
-.tabs > div.active svg path{
+.tabs > div.active svg.svg path{
+  fill: #1E2D48;
+}
+.tabs > div svg.svg path{
+  fill: #E3E8F2;
+}
+.tabs > div.active svg.last-svg path{
   stroke: white;
 }
-.tabs > div svg path{
+.tabs > div svg.last-svg path{
   stroke: #1E2D48;
 }
 .tabs > div.active p{
@@ -228,4 +275,9 @@ border-color: #FFFFFF29;
 	left: 0px;
 	fill: rgb(30, 45, 72)
 }
-/*  */
+/* media query */
+@media (max-width: 450px) {
+  footer{
+    padding-bottom: 88px;
+  }
+}
