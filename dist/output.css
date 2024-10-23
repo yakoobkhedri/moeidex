@@ -1277,6 +1277,10 @@ video {
   height: 100%;
 }
 
+.h-\[82\%\] {
+  height: 82%;
+}
+
 .max-h-40 {
   max-height: 10rem;
 }
@@ -1427,6 +1431,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[409px\] {
+  max-width: 409px;
 }
 
 .flex-shrink-0 {
@@ -2634,8 +2642,21 @@ body {
 }
 
 .border-linear{
-  border: 1px solid;
-  border-image-source: linear-gradient(270deg, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%);
+  border: solid 1px transparent;
+  border-radius: 22px;
+  background:
+        linear-gradient( #1e2d48, #1e2d48) padding-box,
+        linear-gradient(to left, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%) border-box;
+}
+
+.gradient-hover:hover{
+  background:
+        linear-gradient(to left, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%) padding-box,
+        linear-gradient( #1e2d48, #1e2d48) border-box;
+}
+
+.gradient-hover:hover svg path{
+  fill: white;
 }
 
 a {
