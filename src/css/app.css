@@ -239,6 +239,12 @@ a {
   box-shadow: -7.21px -7.21px 14.43px 0px #1E2D4833;
   box-shadow: -6.44px 5.06px 36.81px 0px #D1AF89B2;
 }
+.shadow-13 {
+  box-shadow: -14px 11px 80px 0px #d1af89;
+}
+.shadow-14 {
+  box-shadow: 0px 0px 15px 3px #0000001A;
+}
 .shadow-next {
   box-shadow: -2px 0px 24px 0px #0000001A;
 }

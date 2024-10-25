@@ -221,3 +221,29 @@ var swiperComment = new Swiper(".swiperComment", {
     }
   },
 });
+var customers = new Swiper(".customers", {
+  loop: true,
+  spaceBetween: 26,
+  slidesPerView: 1.7,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 41,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
