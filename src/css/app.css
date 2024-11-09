@@ -82,6 +82,9 @@ body {
   height: 12px!important;
   background-color: #B0B7BF!important;
   border-radius: 2px;
+  transition: all .4s;
+  opacity: 100;
+  margin: 0 2.5px;
 }
 #banner .swiper-pagination-bullet-active{
   height: 18px!important;

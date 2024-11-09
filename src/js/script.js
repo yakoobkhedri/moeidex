@@ -95,12 +95,9 @@ var banner= new Swiper(".banner", {
   loop: true,
   spaceBetween: 65,
   slidesPerView: 1,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  autoplay: true,
   pagination: {
-    el: ".swiper-pagination2",
+    el: ".swiper-pagination1",
     clickable: true,
   }
 });
