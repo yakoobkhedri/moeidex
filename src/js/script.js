@@ -1,10 +1,12 @@
 // accordion
 
 let accordionBtn=Array.from(document.getElementsByClassName('accordionBtn'));
+let accordionContent= Array.from(document.getElementsByClassName('accordionContent'));
 
 accordionBtn.forEach((item)=>{
   item.addEventListener('click',function () {
-    item.nextElementSibling.classList.toggle('active');
+    accordionContent.forEach((items)=>{items.classList.remove('active')});
+    item.nextElementSibling.classList.add('active');
   })
 })
 
